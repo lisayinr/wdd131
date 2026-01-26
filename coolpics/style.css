@@ -15,32 +15,12 @@ footer {
   max-width: none;
   text-align: center;
 }
-main{
-    display: grid;
-    grid-template-columns: 1fr;
-    /* background-color: #CCCCCC; */
-}
-section {
-    justify-self: center;
-}
-main > h1 {
-  grid-column: 1 / -1;
-  margin: 1rem 0;
-}
-h1 {
-    text-align: center;
-}
-img {
-    margin: 1em;
-    width: 250px;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    border: 5px solid white;
-    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.6);
-}
 nav a {
     padding: 20px;
-    color: black;
+    display: block;
+    color: white;
+}
+.hide {
     display: none;
 }
 nav a:hover {
@@ -53,34 +33,76 @@ nav a:hover {
     background-color: transparent;
     color: white;
 }
-header {
+h1 {
     text-align: center;
+    margin: 35px 0;
 }
-footer {
-    text-align: center;
+.gallery {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+figure img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.6);
+    display: block;
+    margin: 0 auto;
+}
+dialog img {
+    width: 90%;
+    display: block;
+    margin: 20vh auto;
+}
+dialog {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.75);
+}
+.close-viewer {
+    position: absolute;
+    top: 10vh;
+    right: 2vh;
+    padding: 3px 6px;
+    font-size: 1.5em;
 }
 
 
 
 
 @media screen and (min-width: 700px) {
-    main{
+    .gallery {
+        display: grid;
         grid-template-columns: 1fr 1fr;
-        text-align: center;
     }
 }
-
 @media screen and (min-width: 1000px) {
-    main {
+    .gallery {
         grid-template-columns: 1fr 1fr 1fr;
-        max-width: 1100px;
-        margin: 0 auto; 
     }
     .menu-btn {
         display: none;
     }
-    nav a{
-        display: inline;
+    .hide{
+        display: flex;
         color: white;
+        justify-content: center;
     }
-}        
+    dialog img {
+        width: 60%;
+        margin: 15vh auto;
+    }
+    .close-viewer {
+        position: absolute;
+        right: 15vh;
+    }
+    .viewer {
+        margin: 50px;
+        padding: 50px;
+    }
+    .viewer img {
+        max-width: 800px;
+    }
+}
