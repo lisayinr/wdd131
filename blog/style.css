@@ -50,7 +50,7 @@ h1, h2 {
     max-width: 700px;
     margin: 20px auto;
 }
-#info {
+.info {
     text-align: right;
 }
 .book h2 {
@@ -83,7 +83,7 @@ h1, h2 {
         align-items: stretch;
         column-gap: 2rem;
     }
-    #info {
+    .info {
         grid-row: 1/4;
         grid-column: 1/2;
         align-self: stretch;
@@ -91,11 +91,11 @@ h1, h2 {
         height: 100%;
         padding-right: 1.5rem;
     }
-    .book h2, .book img, #desc {
+    .book h2, .book img, .desc {
         grid-column: 2 / 3;
     }
     .book h2 { grid-row: 1; }
     .book img { grid-row: 2; }
-    #desc { grid-row: 3; }
+    .desc { grid-row: 3; }
 }
           
