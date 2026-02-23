@@ -70,4 +70,120 @@ main {
 
 .chip {
   grid-column: 2 / 3;
-  justify-self: 
+  justify-self: end;
+  font-size: 2.6rem;
+}
+
+.number {
+  grid-column: 1 / 2;
+}
+
+.name {
+  grid-column: 1 / 2;
+}
+
+.expiration {
+  grid-column: 2 / 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  column-gap: 0.75rem;
+  row-gap: 0rem;
+  align-self: start;
+}
+
+.expiration label {
+  grid-column: 1 / -1;
+  margin-bottom: 0.35rem;
+}
+
+.expiration input {
+  width: 100%;
+}
+
+/* ---------- Back card ---------- */
+.card-back {
+  z-index: 1;
+  background: #ccc;
+
+  transform: translate(var(--offset-x), var(--offset-y));
+
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 1.75rem;
+}
+
+.magstripe {
+  height: 46px;
+  background: black;
+
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+
+  border-radius: 0;
+}
+
+.cvc {
+  justify-self: end;
+  width: 160px;
+
+  align-self: end;
+  transform: translateY(-20px);
+}
+
+/* ---------- Form ---------- */
+label {
+  display: block;
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.35rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  border-radius: 0;
+  border: 1px solid #999;
+  font-size: 1rem;
+}
+
+/* ---------- Submit ---------- */
+#submitBtn {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  justify-self: end;
+
+  padding: 0.75rem 1.6rem;
+  border-radius: 10px;
+  border: 1px solid #333;
+  background: #eee;
+  cursor: pointer;
+
+  box-shadow: 5px 5px 7px rgba(0,0,0,0.65);
+
+  transform: translateY(var(--offset-y));
+}
+
+/* ---------- Errors ---------- */
+.errors {
+  color: red;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 650px) {
+  .card-front,
+  .card-back {
+    width: 100%;
+  }
+
+  .card-back {
+    transform: none;
+  }
+
+  #submitBtn {
+    transform: none;
+    justify-self: center;
+  }
+}
