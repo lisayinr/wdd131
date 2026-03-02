@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Lisa Yin">
+    <title>RecipeBook</title>
+    <meta name="description" content="Search and discover recipes." />
+
+
+    <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="RecipeBook">
+    <meta property="og:description" content="Search and discover simple, delicious recipes.">
+    <meta property="og:url" content="YOUR_URL_HERE">
+    <meta property="og:image" content="images/social-preview-image.png">
+
+    <!-- X Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="RecipeBook">
+    <meta name="twitter:description" content="Search and discover simple, delicious recipes.">
+    <meta name="twitter:image" content="images/social-preview-image.png">
+
+    <!-- One favicon (ICO works everywhere) -->
+    <link rel="icon" href="favicon.ico">
+
+    <!-- One Apple Touch Icon (iOS home screen) -->
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="page">
+
+    <header class="site-header">
+        <div class="brand">
+        <img class="brand__logo" src="images/recipe-book.png" alt="Recipe book logo">
+        <h1 class="brand__title">RecipeBook</h1>
+        </div>
+    </header>
+
+    <main class="content">
+        <section class="search">
+        <form class="search__form" action="#" method="get">
+            <label class="sr-only" for="recipeSearch">Search recipes</label>
+            <input id="recipeSearch" class="search__input" type="search" name="q" placeholder="Find a recipe" />
+            <button class="search__button" type="submit" aria-label="Search">
+            <img src="images/search.svg" alt="" aria-hidden="true">
+            </button>
+        </form>
+        </section>
+        <hr>
+
+        <section class="recipe-card" aria-label="Featured recipe">
+        <div class="recipe-card__image">
+            <img src="images/apple-crisp.jpg" alt="Apple crisp served with vanilla ice cream">
+        </div>
+
+        <div class="recipe-card__info">
+            <span class="tag">dessert</span>
+
+            <h2 class="recipe-title">Apple Crisp</h2>
+
+            <span
+            class="rating"
+            role="img"
+            aria-label="Rating: 4 out of 5 stars"
+            >
+            <span aria-hidden="true" class="icon-star">⭐</span>
+            <span aria-hidden="true" class="icon-star">⭐</span>
+            <span aria-hidden="true" class="icon-star">⭐</span>
+            <span aria-hidden="true" class="icon-star">⭐</span>
+            <span aria-hidden="true" class="icon-star-empty">☆</span>
+            </span>
+
+            <p class="recipe-desc">
+            This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.
+            </p>
+        </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">
+        Recipe icons created by Freepik - Flaticon
+        </a>
+
+        <div class="social">
+        <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+        <a href="#" aria-label="Instagram">
+            <img src="images/instagram_icon.svg" alt="instagram icon">
+        </a>
+        <a href="#" aria-label="YouTube">
+            <img src="images/youtube_icon.svg" alt="youtube icon">
+        </a>
+        <a href="#" aria-label="Pinterest">
+            <img src="images/pinterest_icon.svg" alt="pinterest icon">
+        </a>
+        </div>
+    </footer>
+
+    </div>
+</body>
+</html>
