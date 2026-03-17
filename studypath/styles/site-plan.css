@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F6F7F2;
+  color: #2F3E2C;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #6B8E23;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  padding: 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  color: #6B8E23;
+}
+
+img {
+    max-width: 80%;
+}
+
+.logo {
+  max-width: 150px;
+  height: auto;
+}
