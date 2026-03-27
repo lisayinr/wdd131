@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>StudyPath Site Plan</title>
+  <title>Study Path Site Plan</title>
   <link rel="stylesheet" href="styles/site-plan.css" />
+  <link rel="icon" href="images/favicon.ico">
 </head>
 <body>
 
@@ -21,7 +22,7 @@
 
     <section>
       <h2>Purpose</h2>
-      <p>StudyPath is a web application designed to help students organize assignments, track due dates, and manage their school workload more effectively. The site provides a simple way to view tasks, filter them by course or completion status, and stay on top of deadlines.</p>
+      <p>Study Path is a web application designed to help students organize assignments, track due dates, and manage their school workload more effectively. The site provides a simple way to view tasks, filter them by course or completion status, and stay on top of deadlines.</p>
     </section>
 
     <section>
@@ -36,7 +37,7 @@
 
     <section>
       <h2>Logo</h2>
-      <img src="images/logo.png" alt="StudyPath Logo" class="logo">
+      <img src="images/logo.png" alt="Study Path Logo" class="logo">
     </section>
 
     <section>
@@ -67,8 +68,49 @@
     </section>
 
     <section>
-      <h2>Content</h2>
-      <p>The site will include assignment cards with titles, course names, due dates, and completion status. It will also include filtering options, a progress summary, and helpful study tips. Example assignments include math homework, discussion posts, and lab reports. The site will include clear headings and simple instructions for users.</p>
+    <h2>Content</h2>
+
+    <h3>Home Page</h3>
+
+    <h4>Image</h4>
+    <img id="study-img" src="images/study.jpg" alt="Someone using a study planner">
+
+    <h4>Main Heading (About Section)</h4>
+    <p><strong>Text:</strong> Organize your schoolwork with confidence</p>
+    <p><strong>Text:</strong> Study Path is designed to help students stay organized and keep track of their assignments in a simple and clear way. Managing multiple classes can quickly become overwhelming, especially when deadlines start to pile up. This site provides a focused space where users can see their assignments, understand what still needs to be completed, and stay on top of their responsibilities.</p>
+
+    <p>With a clean layout and easy-to-use features, StudyPath allows students to quickly view their workload and stay motivated. Instead of feeling stressed or unsure about what to do next, users can confidently manage their tasks and make steady progress throughout the week.</p>
+
+
+    <h3>Tracker Page</h3>
+
+    <h3>Sample Assignment Data</h3>
+    <p>The tracker page will use sample assignment data stored in an array of objects. This allows assignments to be displayed dynamically and filtered using JavaScript.</p>
+
+    <pre>
+  const assignments = [
+    {
+      title: "Math Homework 5",
+      course: "Math 108",
+      completed: false
+    },
+    {
+      title: "History Discussion Post",
+      course: "History 201",
+      completed: true
+    },
+    {
+      title: "Science Lab Report",
+      course: "Biology 110",
+      completed: false
+    },
+    {
+      title: "English Reading Notes",
+      course: "English 150",
+      completed: false
+    }
+  ];
+    </pre>
     </section>
 
     <section>
