@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Use the Study Path tracker to filter assignments and view your progress summary.">
+    <meta name="author" content="Lisa Yin">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lisayinr.github.io/wdd131/studypath/tracker.html">
+    <link rel="icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+    <title>Study Path | Tracker</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="brand">
+            <img src="images/logo2.png" alt="Study Path logo" class="logo">
+            <span>Study Path</span>
+        </a>
+    </header>
+
+    <main class="tracker-main">
+        <section class="tracker-layout">
+            <aside class="filter-panel">
+                <h2>Filters</h2>
+
+                <label for="courseFilter">Course</label>
+                <select id="courseFilter">
+                <option value="All">All</option>
+                </select>
+
+                <fieldset class="status-group">
+                <legend>Status</legend>
+
+                <label>
+                    <input type="radio" name="status" value="All" checked>
+                    All
+                </label>
+
+                <label>
+                    <input type="radio" name="status" value="Completed">
+                    Completed
+                </label>
+
+                <label>
+                    <input type="radio" name="status" value="Incomplete">
+                    Incomplete
+                </label>
+                </fieldset>
+                <button id="filterBtn" type="button" aria-label="Filter assignments">Filter</button>
+            </aside>
+
+            <section class="assignments-panel">
+                <h2>Assignments</h2>
+                <div id="assignmentList" class="assignment-list"></div>
+                <p id="noResultsMessage" class="no-results hidden">No assignments match your filter.</p>
+            </section>
+
+            <aside class="progress-panel">
+                <h2>Progress Summary</h2>
+                <p><strong>Total Assignments:</strong> <span id="totalAssignments">0</span></p>
+                <p><strong>Completed:</strong> <span id="completedAssignments">0</span></p>
+                <p><strong>Remaining:</strong> <span id="remainingAssignments">0</span></p>
+            </aside>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Lisa Yin</p>
+    </footer>
+</body>
+</html>
